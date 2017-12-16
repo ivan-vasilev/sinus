@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org/">
+<body>
+<wicket:extend>
+	<form wicket:id="check_form">
+		<div wicket:id="search_data" style="margin-bottom:30px" class="border"></div> 
+		<table wicket:enclosure="results" class="list border">
+			<thead>
+				<tr>
+					<wicket:enclosure child="groupselector">
+						<th><input type="checkbox" wicket:id="groupselector" /></th>
+					</wicket:enclosure>
+					<th><wicket:message key="annotate"></wicket:message></th>
+					<th wicket:id="titles"></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr wicket:id="results">
+					<wicket:enclosure child="check">
+						<td><input type="checkbox" wicket:id="check" /></td>
+					</wicket:enclosure>
+					<td>
+						<a wicket:id="view_object" class="block"></a>
+						<a wicket:id="annotate_object"><span class="left" style="background:url(/images/sprites.png) -0px -29px;width:16px;height:16px;margin-right:3px;"></span></a>
+					</td>
+					<wicket:container wicket:id="values"></wicket:container>
+				</tr>
+			</tbody>
+		</table>
+		<div class="listFooter">
+			<div wicket:id="paging" class="listNavigator"></div>
+		</div>
+		<div class="marginTopBig">
+			<button type="submit" wicket:id="new_search" class="btn">
+				<wicket:message key="new_search"></wicket:message>
+			</button>
+			<button type="submit" wicket:id="add_to_selected" class="btn">
+				<wicket:message key="add_to_selected"></wicket:message>
+			</button>
+		 	<a wicket:id="selected_results" class="link_btn_dgreen"></a>
+		</div>
+	</form>
+	<h1 wicket:id="no_results"></h1>
+
+	<wicket:fragment wicket:id="search_with_context_fragment">
+		<table>
+			<thead>
+				<tr>
+					<th style="padding-right:200px;"><wicket:message key="current_query"></wicket:message></th>
+					<th style="padding-right:200px;"><wicket:message key="context_uris"></wicket:message></th>
+					<th><wicket:message key="context_query"></wicket:message></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><wicket:container wicket:id="humanReadable"></wicket:container></td>
+					<td wicket:id="context_uris"></td>
+					<td><wicket:container wicket:id="contextHumanReadable"></wicket:container></td>
+				</tr>
+			</tbody>
+		</table>
+	</wicket:fragment>
+</wicket:extend>	
+</body>
+</html>

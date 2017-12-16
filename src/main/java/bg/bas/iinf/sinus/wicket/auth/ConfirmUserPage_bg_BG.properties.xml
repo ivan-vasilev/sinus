@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <entry key="confirm_success">Вашата регистрация беше потвърдена успешно.</entry>
+    <entry key="title">Потвърждаване на регистрация</entry>
+</properties>

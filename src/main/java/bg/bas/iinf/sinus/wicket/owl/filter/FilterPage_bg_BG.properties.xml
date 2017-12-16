@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<entry key="ontology">Онтология</entry>
+	<entry key="ontologies">Онтологии</entry>
+	<entry key="load">Зареди</entry>
+	<entry key="search_objects">Обекти за търсене</entry>
+	<entry key="filter">Избор на обекти за търсене</entry>
+	<entry key="display">Свойства за показване</entry>
+	<entry key="view_filter">Преглед на заявката</entry>
+	<entry key="show_search">Преглед на заявката</entry>
+	<entry key="save_search">Запомни това търсене</entry>
+	<entry key="saved_searches">Запомнени търсения</entry>
+	<entry key="save_new_search">Запомни като ново търсене</entry>
+	<entry key="save_search_sucess">Търсенето беше запомнено успешно</entry>
+	<entry key="new_search">Ново търсене</entry>
+	<entry key="save_search">Запомни търсенето</entry>
+	<entry key="selected_context">Избран контекст</entry>
+	<entry key="select_context">Избете контекст</entry>
+	<entry key="load_search">Избери търсене</entry>
+	<entry key="results">Резултати</entry>
+	<entry key="refresh">Обнови</entry>
+	<entry key="search_not_specified">Задайте коректно търсене или изберете резултати</entry>
+	<entry key="display_not_specified">Моля, изберете поне една характеристика за показване</entry>
+	<entry key="perform_search_over">върху резултатите от</entry>
+	<entry key="remove_saved_search">Премахни избраното търсене</entry>
+	<entry key="search_xml">XML</entry>
+	<entry key="search_results">Изпращане на заявка</entry>
+	<entry key="search_criteria">Критерии</entry>
+	<entry key="select">Изберете</entry>
+	<entry key="new_session">Нова сесия</entry>
+	<entry key="choose_session">Изберете сесия</entry>
+</properties>

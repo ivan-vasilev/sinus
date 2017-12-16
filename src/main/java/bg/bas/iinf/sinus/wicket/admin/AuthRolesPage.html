@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html xmlns:wicket="http://wicket.apache.org/">
+
+<body>
+<wicket:head>
+	<meta name="robots" content="noindex,nofollow" />
+</wicket:head>
+<wicket:extend>
+	<br /><br /><br />
+	<div class="listHeader">
+		<form wicket:id="search_form" class="block">
+			<input type="text" wicket:id="search_term" class="categoriesSearchTextBox" wicket:message="placeholder:user" />
+			<input type="submit" wicket:id="search_button" wicket:message="value:search" class="btn_s"/>
+		</form>
+	</div>
+	<div wicket:id="container">
+		<table class="list">
+			<thead>
+				<tr>
+					<th><wicket:message key="user"></wicket:message></th>
+					<th><wicket:message key="roles"></wicket:message></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr wicket:id="users">
+					<td wicket:id="name" class="bold"></td>
+					<td class="maxWidth">
+						<form wicket:id="auth_roles_form">
+							<span wicket:id="roles"></span>
+							<input type="submit" wicket:id="submit" wicket:message="value:save" class="btn_s top"/>
+						</form>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="listFooter">
+			<div wicket:id="paging" class="listNavigator"></div>
+		</div>	
+	</div>
+	<div wicket:id="no_results" class="noResults"></div>
+</wicket:extend>
+</body>
+</html>

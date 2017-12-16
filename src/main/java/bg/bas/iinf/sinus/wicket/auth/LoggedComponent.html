@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org/">
+<body>
+<wicket:panel>
+	<div class="left">
+		<table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;display:inline-table;#display:inline;">
+			<tr>
+				<wicket:enclosure child="admin">
+					<td>
+						<div wicket:id="admin" dojoType="dijit.form.DropDownButton" class="manufacturersDDBtn">
+						   <span><wicket:message key="administration"></wicket:message></span>
+						   <div dojoType="dijit.Menu">
+						       <div dojoType="dijit.MenuItem" wicket:id="auth_roles"><wicket:message key="auth_roles"></wicket:message></div>
+						       <div dojoType="dijit.MenuItem" wicket:id="ontologies"><wicket:message key="ontologies"></wicket:message></div>
+						       <div dojoType="dijit.MenuItem" wicket:id="annotations_configuration"><wicket:message key="annotations_configuration"></wicket:message></div>
+						   </div>
+						</div>
+					</td>
+				</wicket:enclosure>
+				<td style="padding:6px 0;"><a class="header_link" wicket:id="search"><wicket:message key="search"></wicket:message></a></td>
+			</tr>
+		</table>
+	</div>
+	<div class="right">
+		<table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;display:inline-table;#display:inline;">
+			<tr>
+				<td style="padding:6px 0;"><a wicket:id="edit_user" class="header_link" style="margin-right:6px;"></a></td>
+				<td><a class="header_link" wicket:id="logout"><wicket:message key="logout"></wicket:message></a></td>
+			</tr>
+		</table>
+	</div>
+</wicket:panel>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org/">
+<head>
+	<title wicket:id="page_title"></title>
+	<link rel="icon" type="image/png" href="/images/favicon.ico" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />	
+	<meta wicket:id="page_description" name="description" content="" />
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/dojo/1.5/dojo/dojo.xd.js"  djConfig="isDebug: true, parseOnLoad: true"></script>
+
+    <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/dojo/1.5/dijit/themes/claro/claro.css" />
+</head>
+<body class="claro">
+	<div wicket:id="menu_bar_container" class="menu_bar"></div>
+	<div id="main">
+		<wicket:enclosure child="big_title">		
+			<div class="cp_base_page header">
+				<img src="images/banner.png" style="height:25px;" />
+				<span class="page_title_header maxWidth" wicket:id="big_title"></span>
+			</div>
+		</wicket:enclosure>
+		<div class="mw_content">
+			<wicket:child />
+		</div>
+	</div>
+	<div wicket:id="notifications"></div>
+	<form wicket:id="main_modal_form"><div wicket:id="main_modal_window"></div></form>
+</body>
+</html>

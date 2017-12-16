@@ -1,0 +1,15 @@
+.navigationContainer {
+	overflow: auto;
+	margin-top:-15px;
+	margin-bottom:20px;
+}
+
+.navigationTabs {
+	float: left;
+	padding: 5px 0;	
+}
+
+.navigationAddNew {
+	float: right;
+	padding: 5px 0;
+}

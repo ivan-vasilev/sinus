@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org/">
+<wicket:head>
+	<meta name="robots" content="noindex,nofollow" />
+</wicket:head>
+<body>
+<wicket:extend>
+	<a wicket:id="admin_mail_link" style="font-size:15px;"><wicket:message key="admin_mail_field"></wicket:message></a>
+	<br/>
+	<a wicket:id="show_change_password_window" style="font-size:15px;padding-top:6px;" class="block"><wicket:message key="change_password"></wicket:message></a>
+
+	<wicket:fragment wicket:id="admin_mail_fragment">
+		<form wicket:id="form" class="nowrap">
+			<label class="bold txt_cp_blue" wicket:for="admin_mail_field">E-mail</label>:
+			<input type="text" wicket:id="admin_mail_field" />
+			<div class="txt_center marginTop">
+				<input type="submit" wicket:id="submit" wicket:message="value:submit" class="btn" style="margin-right:3px;" />
+				<a wicket:id="close" class="modal_win_normal"><wicket:message key="close"></wicket:message></a>
+			</div>
+		</form>
+	</wicket:fragment>
+
+	<wicket:fragment wicket:id="change_password_fragment">
+		<form wicket:id="edit_password_form">
+			<table wicket:id="password"></table>
+			<div class="marginTop">
+				<table class="maxWidth">
+					<tr>
+						<td align="center">
+							<button type="submit" wicket:id="change_password_button" value="submit" class="btn" style="margin-right:3px;">
+								<wicket:message key="change_password">change password</wicket:message>
+							</button>
+							<a wicket:id="close" class="modal_win_normal"><wicket:message key="close"></wicket:message></a>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</form>
+		<wicket:fragment wicket:id="password_fragment">
+	    	<tr>
+				<td class="bold top txt_cp_blue nowrap" style="padding:5px 5px 5px 0;"><label wicket:for="old_password"><wicket:message key="old_password">password</wicket:message>:</label></td>
+				<td><input type="password" wicket:id="old_password" /></td>
+			</tr>
+	    	<tr>
+				<td class="bold top txt_cp_blue nowrap" style="padding:5px 5px 5px 0;"><label wicket:for="password"><wicket:message key="new_password">password</wicket:message>:</label></td>
+				<td><input type="password" wicket:id="password" /></td>
+			</tr>
+			<tr>
+				<td class="bold top txt_cp_blue nowrap" style="padding:5px 5px 5px 0;"><label wicket:for="repeat_password"><wicket:message key="repeat_new_password">repeat password</wicket:message>:</label></td>
+				<td><input type="password" wicket:id="repeat_password" /></td>
+			</tr>        	
+		</wicket:fragment>
+	</wicket:fragment>
+
+</wicket:extend>
+</body>
+</html>

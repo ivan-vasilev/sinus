@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<entry key="ontologies">Избор на онтологии</entry>
+	<entry key="ontology">Онтология</entry>
+	<entry key="upload">Добави</entry>
+	<entry key="file_input">Файл</entry>
+	<entry key="error_upload">Грешка! Файлът не може да бъде записан.</entry>
+	<entry key="is_configured">Конфигурирана</entry>
+</properties>

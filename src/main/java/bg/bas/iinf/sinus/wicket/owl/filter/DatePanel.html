@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org/">
+<body>
+<wicket:panel>
+	<select wicket:id="date_type"></select>
+	<span wicket:id="date"></span>
+
+	<wicket:fragment wicket:id="exact_value_fragment">
+		<input type="text" wicket:id="exact_date" wicket:message="placeHolder:date" autocomplete="off" />
+	</wicket:fragment>
+	<wicket:fragment wicket:id="range_values_fragment">
+		<input type="text" wicket:id="from" wicket:message="placeHolder:from" autocomplete="off" />
+		<input type="text" wicket:id="to" wicket:message="placeHolder:to" autocomplete="off" />
+	</wicket:fragment>
+</wicket:panel>
+</body>
+</html>

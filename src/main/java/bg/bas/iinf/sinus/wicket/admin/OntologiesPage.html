@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org/">
+<body>
+<wicket:head>
+	<meta name="robots" content="noindex,nofollow" />
+</wicket:head>
+<wicket:extend>
+	<br /><br /><br />
+	<div class="listHeader">
+		<form wicket:id="upload_form">
+			<label wicket:for="file_input" class="bold txt_cp_blue"><wicket:message key="file_input"></wicket:message></label><b class="red_star">*</b>
+			<input type="file" wicket:id="file_input" />
+			<button wicket:id="upload_button" class="btn_s">
+				<wicket:message key="upload"></wicket:message>
+			</button>
+		</form>
+	</div>
+	<div wicket:id="container">
+		<table class="list">
+			<thead>
+				<tr>
+					<th><wicket:message key="ontology"></wicket:message></th>
+					<th><wicket:message key="is_configured"></wicket:message></th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr wicket:id="ontologies">
+					<td class="maxWidth bold nowrap txt_cp_blue"><a wicket:id="id"></a></td>
+					<td class="bold nowrap txt_cp_blue" wicket:id="is_configured"></td>
+					<td class="maxWidth">
+						<a wicket:id="delete" wicket:message="title:delete"><span class="left sprite_delete"></span></a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div wicket:id="no_results" class="noResults"></div>
+</wicket:extend>
+</body>
+</html>

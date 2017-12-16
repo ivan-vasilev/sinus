@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<entry key="title">Конфигуриране на онтология</entry>
+	<entry key="display">Показване</entry>
+	<entry key="objects">Базови обекти</entry>
+	<entry key="save">Запиши</entry>
+	<entry key="default_filter_values">Избор на обекти за търсене</entry>
+	<entry key="default_display_values">Свойства за показване по подразбиране</entry>
+	<entry key="mark_configured">Маркирай като конфигурирана</entry>
+</properties>

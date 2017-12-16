@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org/">
+<body>
+<wicket:panel>
+	<form wicket:id="form">
+		<table>
+			<tr>
+				<td><input type="text" wicket:id="new_session" wicket:message="placeholder:new_session" /></td>
+				<td><input type="submit" wicket:id="add_new_session" class="btn_s" wicket:message="value:new_session" /></td>
+			</tr>
+			<tr wicket:enclosure="tags">
+				<td><select wicket:id="tags"></select></td>
+				<td><button type="submit" wicket:id="select_existing_session" class="btn_s nowrap"><wicket:message key="select_this_session"></wicket:message></button></td>
+			</tr>
+		</table>
+	</form>
+</wicket:panel>
+</body>
+</html>

@@ -1,0 +1,1 @@
+﻿mvn install:install-file -Dfile=HermiT.jar -DgroupId=com.hermit-reasoner -DartifactId=reasoner -Dversion=1.3.3  -Dpackaging=jar -DgeneratePom=true

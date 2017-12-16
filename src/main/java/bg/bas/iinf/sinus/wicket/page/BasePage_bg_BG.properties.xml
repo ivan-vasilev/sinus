@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <entry key="logout">Изход</entry>
+    <entry key="register">Регистрация</entry>
+    <entry key="forgotten_password">Забравена парола</entry>
+    <entry key="login">Вход</entry>
+    <entry key="ont">Онтологии</entry>
+    <entry key="my_searches">Запомнени търсения</entry>
+    <entry key="default_values">Стойности по подразбиране</entry>
+</properties>

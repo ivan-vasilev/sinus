@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org/">
+<wicket:head>
+	<meta name="robots" content="noindex,nofollow" />
+</wicket:head>
+<body>
+<wicket:extend>
+<div class="center" style="width:300px;">
+	<h1 class="txt_heading nowrap" style="font-size:14px; margin-bottom:15px;" wicket:id="login_message">User entry</h1>
+	<div>
+		<form wicket:id="login_form" class="login_form">
+			<table>
+				<tr>
+					<td class="txt_right bold txt_cp_blue" style="padding-right:5px;"><wicket:message key="label_username"></wicket:message>:</td>
+					<td><input type="text" wicket:id="username" class="input_width"/></td>
+				</tr>
+				<tr>
+					<td class="txt_right bold txt_cp_blue" style="padding-right:5px;"><wicket:message key="password"></wicket:message>:</td>
+					<td><input type="password" wicket:id="password" class="input_width"/></td>
+				</tr>
+				<tr>
+					<td class="txt_right">
+						<span class="chbox_outer_div"><input type="checkbox" wicket:id="rememberMe" class="chbox_custom"/></span>
+					</td>
+					<td>
+						<span class="valign_middle" style="margin-left: 2px;" wicket:id = "chboxRemember">remember me</span>
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><button type="submit" wicket:id="login_button" class="btn"><wicket:message key="value_button"></wicket:message></button></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+	<span>
+		<a wicket:id="create_user"><wicket:message key="login.register"></wicket:message></a>&nbsp;&nbsp;
+		<a wicket:id="forgotten_password"><wicket:message key="login.forgotten_password"></wicket:message></a>
+	</span>
+</div>
+</wicket:extend>
+</body>
+</html>

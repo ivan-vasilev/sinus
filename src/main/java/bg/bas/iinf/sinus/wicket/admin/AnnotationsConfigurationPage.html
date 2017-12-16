@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org/">
+<body>
+	<wicket:head>
+		<meta name="robots" content="noindex,nofollow" />
+	</wicket:head>
+	<wicket:extend>
+		<div class="clear_both marginTopBig">
+			<div class="top inline" style="display: table-cell;">
+				<div class="titlepane_static_h">
+					<h1>
+						<wicket:message key="root_objects"></wicket:message>
+					</h1>
+				</div>
+				<div class="titlepane_c">
+					<div wicket:id="root_objects" class="titlepane_cin"></div>
+				</div>
+			</div>
+			<div style="display: table-cell; min-width: 0.8em;"></div>
+			<div wicket:id="container" class="top maxWidth" style="display: table-cell; margin-top: 0; padding-top: 0;">
+				<div class="titlepane_static_h">
+					<h1>
+						<wicket:message key="annotation_properties"></wicket:message>
+					</h1>
+				</div>
+				<div class="titlepane_c marginBottom">
+					<div wicket:id="properties" class="titlepane_cin"></div>
+				</div>
+			</div>
+		</div>
+
+		<wicket:fragment wicket:id="properties_fragment">
+		   	<span wicket:id="annotations_menu"></span>
+		   	<div wicket:id="annotation_values_container">
+			   	<table>
+			   		<tr wicket:id="annotation_values">
+			   			<td wicket:id="name"></td>
+			   			<td><a wicket:id="remove" wicket:message="title:delete"><span class="left sprite_delete"></span></a></td>
+			   		</tr>
+			   	</table>
+		   	</div>
+		</wicket:fragment>
+	</wicket:extend>
+</body>
+</html>

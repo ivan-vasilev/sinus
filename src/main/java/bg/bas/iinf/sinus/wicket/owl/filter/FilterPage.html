@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org/">
+<body>
+<wicket:extend>
+	<div class="titlepane_h" onclick="changeTitlePaneVisibility(this);">
+		<div class="titlepane_ht">
+			<img src="images/empty.gif" class="titlepane_hi"/>
+			<span><wicket:message key="ontologies"></wicket:message></span>
+		</div>
+	</div>
+	<div class="titlepane_c marginBottom">
+		<div wicket:id="select_ontolgoies" class="titlepane_cin"></div>
+	</div>
+	<a wicket:id="selected_session" wicket:message="title:delete" class="bold block marginBottom" style="font-size:15px;"></a>
+	<div>
+		<div class="top inline" style="display: table-cell;">
+			<div class="titlepane_h" onclick="changeTitlePaneVisibility(this);">
+				<div class="titlepane_ht">
+					<img src="images/empty.gif" class="titlepane_hi"/>
+					<span><wicket:message key="search_objects"></wicket:message></span>
+				</div>
+			</div>
+			<div class="titlepane_c">
+				<div wicket:id="root_objects" class="titlepane_cin"></div>
+			</div>
+		</div>
+		<div style="display: table-cell; min-width: 0.8em;"></div>
+		<form wicket:id="form" class="top maxWidth" style="display: table-cell; margin-top:0; padding-top: 0;">
+			<div wicket:enclosure="properties">
+				<div class="titlepane_h" onclick="changeTitlePaneVisibility(this);">
+					<div class="titlepane_ht">
+						<img src="images/empty.gif" class="titlepane_hi"/>
+						<span><wicket:message key="search_criteria"></wicket:message></span>
+					</div>
+				</div>
+				<div class="titlepane_c marginBottom">
+					<div wicket:id="properties" class="titlepane_cin"></div>
+				</div>
+			</div>
+			<div wicket:enclosure="properties_display">
+				<div class="titlepane_h" onclick="changeTitlePaneVisibility(this);">
+					<div class="titlepane_ht">
+						<img src="images/empty.gif" class="titlepane_hi"/>
+						<span><wicket:message key="display"></wicket:message></span>
+					</div>
+				</div>
+				<div class="titlepane_c marginBottom">
+					<div wicket:id="properties_display" class="titlepane_cin"></div>
+				</div>
+			</div>
+
+			<div class="center">
+				<button type="submit" wicket:id="show_search" class="btn">
+					<wicket:message key="show_search"></wicket:message>
+				</button>
+				<button type="submit" wicket:id="submit_search" class="btn">
+					<wicket:message key="search_results"></wicket:message>
+				</button>
+			</div>
+		</form>
+		<div style="display: table-cell; min-width: 0.8em;"></div>
+		<div wicket:id="saved_search_id" style="display: table-cell; margin-top:0; padding-top: 0;"></div>
+	</div>
+
+	<wicket:fragment wicket:id="view_filter_fragment">
+		Четим генериран текст:
+		<div wicket:id="human_readable"></div>
+		SPARQL:
+		<div wicket:id="sparql"></div>
+	</wicket:fragment>
+
+	<wicket:fragment wicket:id="selected_saved_search_fragment">
+		<div class="titlepane_h" onclick="changeTitlePaneVisibility(this);">
+			<div class="titlepane_ht">
+				<img src="images/empty.gif" class="titlepane_hi"/>
+				<span><wicket:message key="selected_context"></wicket:message></span>
+			</div>
+		</div>
+		<div class="titlepane_c marginBottom">
+			<div class="titlepane_cin">
+				<a wicket:id="clear_search" wicket:message="title:delete"><span class="right sprite_delete"></span></a>
+				<div wicket:id="saved_search_title"></div>
+				<table wicket:enclosure="results" class="list">
+					<thead>
+						<tr>
+							<th>URI</th>
+							<th wicket:id="titles"></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr wicket:id="results">
+							<td>
+								<a wicket:id="view_object" class="block"></a>
+								<a wicket:id="annotate_object"><span class="left" style="background:url(/images/sprites.png) -0px -29px;width:16px;height:16px;margin-right:3px;"></span></a>
+							</td>
+							<wicket:container wicket:id="values"></wicket:container>
+						</tr>
+					</tbody>
+				</table>
+				<div class="listFooter">
+					<div wicket:id="paging" class="listNavigator"></div>
+				</div>
+			</div>
+		</div>
+	</wicket:fragment>
+
+	<wicket:fragment wicket:id="saved_searches_fragment">
+		<div class="titlepane_h" onclick="changeTitlePaneVisibility(this);">
+			<div class="titlepane_ht">
+				<img src="images/empty.gif" class="titlepane_hi"/>
+				<span><wicket:message key="select_context"></wicket:message></span>
+			</div>
+		</div>
+		<div class="titlepane_c marginBottom">
+			<div class="titlepane_cin">
+				<div wicket:id="container">
+					<table class="list">
+						<tbody>
+							<tr wicket:id="data_view">
+								<td class="nowrap" wicket:id="humanReadable"></td>
+								<td class="nowrap"><a wicket:id="select"><wicket:message key="select"></wicket:message></a></td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="listFooter">
+						<div wicket:id="paging" class="listNavigator" style="font-size:100%;"></div>
+					</div>
+				</div>
+				<div wicket:id="no_results" class="noResults marginTop"></div>
+			</div>
+		</div>
+	</wicket:fragment>
+</wicket:extend>	
+</body>
+</html>

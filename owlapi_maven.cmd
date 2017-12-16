@@ -1,0 +1,1 @@
+﻿mvn install:install-file -Dfile=owlapi-bin.jar -DgroupId=owlapi -DartifactId=owlapi -Dversion=3.2.2  -Dpackaging=jar -Dsources=owlapi-src.jar -DgeneratePom=true

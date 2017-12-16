@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org/">
+<body>
+<wicket:panel>
+	<form wicket:id="form">
+		<div class="nowrap">
+			<label wicket:for="tag" class="bold"><wicket:message key="session"></wicket:message></label>
+			<input wicket:id="tag" type="text" />
+		</div>
+		<div class="marginTop">
+			<input wicket:id="submit" type="submit" wicket:message="value:add_to_session" class="btn" />
+		</div>
+	</form>
+</wicket:panel>
+</body>
+</html>

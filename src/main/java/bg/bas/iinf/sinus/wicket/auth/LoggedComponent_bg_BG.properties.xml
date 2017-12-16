@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <entry key="search">Търсене</entry>
+    <entry key="administration">Администрация</entry>
+    <entry key="auth_roles">Потребителски права</entry>
+    <entry key="default_values">Стойности по подразбиране</entry>
+    <entry key="ontologies">Избор на онтологии</entry>
+    <entry key="logout">Изход</entry>
+    <entry key="annotations_configuration">Настройки за анотиране</entry>
+</properties>

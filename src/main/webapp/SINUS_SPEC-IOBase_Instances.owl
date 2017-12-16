@@ -1,0 +1,626 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY SINUS_SPEC-IOBase "http://www.semanticweb.org/ontologies/2011/0/SINUS_SPEC-IOBase.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/ontologies/2011/0/SINUS_SPEC-IOBase.owl#"
+     xml:base="http://www.semanticweb.org/ontologies/2011/0/SINUS_SPEC-IOBase.owl"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:SINUS_SPEC-IOBase="http://www.semanticweb.org/ontologies/2011/0/SINUS_SPEC-IOBase.owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#">
+    <owl:Ontology rdf:about=""/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/0/SINUS_SPEC-IOBase.owl#OWLObjectProperty_consists_of -->
+
+    <owl:ObjectProperty rdf:about="#OWLObjectProperty_consists_of">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label xml:lang="en">consists of</rdfs:label>
+        <rdfs:range rdf:resource="#OWLClass_MaterialOfIOBase"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/0/SINUS_SPEC-IOBase.owl#OWLObjectProperty_forms_part_of -->
+
+    <owl:ObjectProperty rdf:about="#OWLObjectProperty_forms_part_of">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:label xml:lang="en">forms part of</rdfs:label>
+        <owl:inverseOf rdf:resource="#OWLObjectProperty_is_composed_of"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/0/SINUS_SPEC-IOBase.owl#OWLObjectProperty_has_base -->
+
+    <owl:ObjectProperty rdf:about="#OWLObjectProperty_has_base">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label>has base</rdfs:label>
+        <rdfs:range rdf:resource="#OWLClass_BaseOfIconographicalObject"/>
+        <rdfs:domain rdf:resource="#OWLClass_IconographicalObject"/>
+        <rdfs:subPropertyOf rdf:resource="#OWLObjectProperty_is_composed_of"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/0/SINUS_SPEC-IOBase.owl#OWLObjectProperty_is_base_of -->
+
+    <owl:ObjectProperty rdf:about="#OWLObjectProperty_is_base_of">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:label>is base of</rdfs:label>
+        <rdfs:domain rdf:resource="#OWLClass_BaseOfIconographicalObject"/>
+        <rdfs:range rdf:resource="#OWLClass_IconographicalObject"/>
+        <rdfs:subPropertyOf rdf:resource="#OWLObjectProperty_forms_part_of"/>
+        <owl:inverseOf rdf:resource="#OWLObjectProperty_has_base"/>
+    </owl:ObjectProperty>
+    
+	<owl:DatatypeProperty rdf:about="testInteger">
+		<rdfs:label xml:lang="en">testInteger</rdfs:label>
+		<rdfs:domain rdf:resource="#OWLClass_IconographicalObject"/>
+		<rdfs:range rdf:resource="&xsd;integer" />
+	</owl:DatatypeProperty>
+
+	<owl:DatatypeProperty rdf:about="testDate">
+		<rdfs:label xml:lang="en">testDate</rdfs:label>
+		<rdfs:domain rdf:resource="#OWLClass_IconographicalObject"/>
+		<rdfs:range rdf:resource="&xsd;dateTime" />
+	</owl:DatatypeProperty>
+
+	<owl:DatatypeProperty rdf:about="testBoolean">
+		<rdfs:label xml:lang="en">testBoolean</rdfs:label>
+		<rdfs:domain rdf:resource="#OWLClass_IconographicalObject"/>
+		<rdfs:range rdf:resource="&xsd;boolean" />
+	</owl:DatatypeProperty>
+
+    <!-- http://www.semanticweb.org/ontologies/2011/0/SINUS_SPEC-IOBase.owl#OWLObjectProperty_is_composed_of -->
+
+    <owl:ObjectProperty rdf:about="#OWLObjectProperty_is_composed_of">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:label xml:lang="en">is composed of</rdfs:label>
+        <rdfs:domain rdf:resource="#OWLClass_BaseOfIconographicalObject"/>
+        <rdfs:domain rdf:resource="#OWLClass_IconographicalObject"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/0/SINUS_SPEC-IOBase.owl#OWLObjectProperty_is_incorporated_in -->
+
+    <owl:ObjectProperty rdf:about="#OWLObjectProperty_is_incorporated_in">
+        <rdf:type rdf:resource="&owl;InverseFunctionalProperty"/>
+        <rdfs:label xml:lang="en"
+            >is incorporated in</rdfs:label>
+        <rdfs:domain rdf:resource="#OWLClass_MaterialOfIOBase"/>
+        <owl:inverseOf rdf:resource="#OWLObjectProperty_consists_of"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/0/SINUS_SPEC-IOBase.owl#OWLClass_BaseOfIconographicalObject -->
+
+    <owl:Class rdf:about="#OWLClass_BaseOfIconographicalObject">
+        <rdfs:label xml:lang="en"
+            >Base of Iconographical Object</rdfs:label>
+        <owl:disjointWith rdf:resource="#OWLClass_Board"/>
+        <owl:disjointWith rdf:resource="#OWLClass_Cloth"/>
+        <owl:disjointWith rdf:resource="#OWLClass_IconographicalObject"/>
+        <owl:disjointWith rdf:resource="#OWLClass_MaterialOfIOBase"/>
+        <owl:disjointWith rdf:resource="#OWLClass_Primer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/0/SINUS_SPEC-IOBase.owl#OWLClass_Board -->
+
+    <owl:Class rdf:about="#OWLClass_Board">
+        <rdfs:label xml:lang="en">Board</rdfs:label>
+        <owl:disjointWith rdf:resource="#OWLClass_Cloth"/>
+        <owl:disjointWith rdf:resource="#OWLClass_IconographicalObject"/>
+        <owl:disjointWith rdf:resource="#OWLClass_MaterialOfIOBase"/>
+        <owl:disjointWith rdf:resource="#OWLClass_Primer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/0/SINUS_SPEC-IOBase.owl#OWLClass_Bone -->
+
+    <owl:Class rdf:about="#OWLClass_Bone">
+        <rdfs:label xml:lang="en">Bone</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#OWLClass_SolidMaterial"/>
+        <owl:disjointWith rdf:resource="#OWLClass_Glass"/>
+        <owl:disjointWith rdf:resource="#OWLClass_Metal"/>
+        <owl:disjointWith rdf:resource="#OWLClass_Stone"/>
+        <owl:disjointWith rdf:resource="#OWLClass_Wall"/>
+        <owl:disjointWith rdf:resource="#OWLClass_Wood"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/0/SINUS_SPEC-IOBase.owl#OWLClass_Cloth -->
+
+    <owl:Class rdf:about="#OWLClass_Cloth">
+        <rdfs:label>Cloth</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <owl:disjointWith rdf:resource="#OWLClass_IconographicalObject"/>
+        <owl:disjointWith rdf:resource="#OWLClass_MaterialOfIOBase"/>
+        <owl:disjointWith rdf:resource="#OWLClass_Primer"/>
+    </owl:Class>
+
+    <!-- http://www.semanticweb.org/ontologies/2011/0/SINUS_SPEC-IOBase.owl#OWLClass_Glass -->
+
+    <owl:Class rdf:about="#OWLClass_Glass">
+        <rdfs:label xml:lang="en">Glass</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#OWLClass_SolidMaterial"/>
+        <owl:disjointWith rdf:resource="#OWLClass_Metal"/>
+        <owl:disjointWith rdf:resource="#OWLClass_Stone"/>
+        <owl:disjointWith rdf:resource="#OWLClass_Wall"/>
+        <owl:disjointWith rdf:resource="#OWLClass_Wood"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/0/SINUS_SPEC-IOBase.owl#OWLClass_Icon -->
+
+    <owl:Class rdf:about="#OWLClass_Icon">
+        <rdfs:label xml:lang="en">Icon</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#OWLClass_IconographicalObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/0/SINUS_SPEC-IOBase.owl#OWLClass_IconographicalObject -->
+
+    <owl:Class rdf:about="#OWLClass_IconographicalObject">
+        <rdfs:label xml:lang="en"
+            >Iconographical Object</rdfs:label>
+        <owl:disjointWith rdf:resource="#OWLClass_MaterialOfIOBase"/>
+        <owl:disjointWith rdf:resource="#OWLClass_Primer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/0/SINUS_SPEC-IOBase.owl#OWLClass_Leather -->
+
+    <owl:Class rdf:about="#OWLClass_Leather">
+        <rdfs:label xml:lang="en">Leather</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#OWLClass_SoftMaterial"/>
+        <owl:disjointWith rdf:resource="#OWLClass_Paper"/>
+        <owl:disjointWith rdf:resource="#OWLClass_Textiles"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/0/SINUS_SPEC-IOBase.owl#OWLClass_MaterialOfIOBase -->
+
+    <owl:Class rdf:about="#OWLClass_MaterialOfIOBase">
+        <rdfs:label xml:lang="en">Material</rdfs:label>
+        <owl:disjointWith rdf:resource="#OWLClass_Primer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/0/SINUS_SPEC-IOBase.owl#OWLClass_Metal -->
+
+    <owl:Class rdf:about="#OWLClass_Metal">
+        <rdfs:label xml:lang="en">Metal</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#OWLClass_SolidMaterial"/>
+        <owl:disjointWith rdf:resource="#OWLClass_Stone"/>
+        <owl:disjointWith rdf:resource="#OWLClass_Wall"/>
+        <owl:disjointWith rdf:resource="#OWLClass_Wood"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/0/SINUS_SPEC-IOBase.owl#OWLClass_Paper -->
+
+    <owl:Class rdf:about="#OWLClass_Paper">
+        <rdfs:label xml:lang="en">Paper</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#OWLClass_SoftMaterial"/>
+        <owl:disjointWith rdf:resource="#OWLClass_Textiles"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/0/SINUS_SPEC-IOBase.owl#OWLClass_Primer -->
+
+    <owl:Class rdf:about="#OWLClass_Primer">
+        <rdfs:label xml:lang="en">Primer</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/0/SINUS_SPEC-IOBase.owl#OWLClass_SoftMaterial -->
+
+    <owl:Class rdf:about="#OWLClass_SoftMaterial">
+        <rdfs:label xml:lang="en">Soft Material</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#OWLClass_MaterialOfIOBase"/>
+        <owl:disjointWith rdf:resource="#OWLClass_SolidMaterial"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/0/SINUS_SPEC-IOBase.owl#OWLClass_SolidMaterial -->
+
+    <owl:Class rdf:about="#OWLClass_SolidMaterial">
+        <rdfs:label xml:lang="en">Solid Material</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#OWLClass_MaterialOfIOBase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/0/SINUS_SPEC-IOBase.owl#OWLClass_Stone -->
+
+    <owl:Class rdf:about="#OWLClass_Stone">
+        <rdfs:label xml:lang="en">Stone</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#OWLClass_SolidMaterial"/>
+        <owl:disjointWith rdf:resource="#OWLClass_Wall"/>
+        <owl:disjointWith rdf:resource="#OWLClass_Wood"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/0/SINUS_SPEC-IOBase.owl#OWLClass_Textiles -->
+
+    <owl:Class rdf:about="#OWLClass_Textiles">
+        <rdfs:label xml:lang="en">Textiles</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#OWLClass_SoftMaterial"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/0/SINUS_SPEC-IOBase.owl#OWLClass_Wall -->
+
+    <owl:Class rdf:about="#OWLClass_Wall">
+        <rdfs:label xml:lang="en">Wall</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#OWLClass_SolidMaterial"/>
+        <owl:disjointWith rdf:resource="#OWLClass_Wood"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/0/SINUS_SPEC-IOBase.owl#OWLClass_Wood -->
+
+    <owl:Class rdf:about="#OWLClass_Wood">
+        <rdfs:label xml:lang="en">Wood</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#OWLClass_SolidMaterial"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/0/SINUS_SPEC-IOBase.owl#OWLClass_WoodOfConiferousTree -->
+
+    <owl:Class rdf:about="#OWLClass_WoodOfConiferousTree">
+        <rdfs:label xml:lang="en"
+            >Wood of Coniferous Tree</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#OWLClass_Wood"/>
+        <owl:disjointWith rdf:resource="#OWLClass_WoodOfDeciduousTree"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/0/SINUS_SPEC-IOBase.owl#OWLClass_WoodOfDeciduousTree -->
+
+    <owl:Class rdf:about="#OWLClass_WoodOfDeciduousTree">
+        <rdfs:label
+            >Wood of Deciduous Tree</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#OWLClass_Wood"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="&owl;Thing"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/0/SINUS_SPEC-IOBase.owl#OWLIndividual_IconStNicholas107 -->
+
+    <OWLClass_Icon rdf:about="#OWLIndividual_IconStNicholas107">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en"
+            >Icon St. Nicholas 107</rdfs:label>
+        <OWLObjectProperty_has_base rdf:resource="#OWLIndividual_Base107"/>
+    </OWLClass_Icon>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/0/SINUS_SPEC-IOBase.owl#OWLIndividual_Base107 -->
+
+    <OWLClass_BaseOfIconographicalObject rdf:about="#OWLIndividual_Base107">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en">Base 107</rdfs:label>
+        <OWLObjectProperty_consists_of rdf:resource="#OWLIndividual_Walnut"/>
+    </OWLClass_BaseOfIconographicalObject>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/0/SINUS_SPEC-IOBase.owl#OWLIndividual_IconTheVirginOfTenderness58 -->
+
+    <owl:Thing rdf:about="#OWLIndividual_IconTheVirginOfTenderness58">
+        <rdf:type rdf:resource="#OWLClass_Icon"/>
+        <rdfs:label xml:lang="en"
+            >Icon The Virgin of Tenderness 58</rdfs:label>
+        <OWLObjectProperty_has_base rdf:resource="#OWLIndividual_Base58"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/0/SINUS_SPEC-IOBase.owl#OWLIndividual_Base58 -->
+
+    <OWLClass_BaseOfIconographicalObject rdf:about="#OWLIndividual_Base58">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en">Base 58</rdfs:label>
+        <OWLObjectProperty_is_composed_of rdf:resource="#OWLIndividual_Board58"/>
+        <OWLObjectProperty_consists_of rdf:resource="#OWLIndividual_Chestnut"/>
+    </OWLClass_BaseOfIconographicalObject>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/0/SINUS_SPEC-IOBase.owl#OWLIndividual_Board58 -->
+
+    <owl:Thing rdf:about="#OWLIndividual_Board58">
+        <rdf:type rdf:resource="#OWLClass_Board"/>
+        <rdfs:label xml:lang="en">Board 58</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/0/SINUS_SPEC-IOBase.owl#OWLIndividual_IconTheAscensionOfChrist48 -->
+
+    <OWLClass_Icon rdf:about="#OWLIndividual_IconTheAscensionOfChrist48">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en"
+            >Icon The Ascension of Christ 48</rdfs:label>
+        <OWLObjectProperty_has_base rdf:resource="#OWLIndividual_Base48"/>
+    </OWLClass_Icon>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/0/SINUS_SPEC-IOBase.owl#OWLIndividual_Base48 -->
+
+    <OWLClass_BaseOfIconographicalObject rdf:about="#OWLIndividual_Base48">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en">Base 48</rdfs:label>
+        <OWLObjectProperty_is_composed_of rdf:resource="#OWLIndividual_Board48"/>
+    </OWLClass_BaseOfIconographicalObject>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/0/SINUS_SPEC-IOBase.owl#OWLIndividual_Board48 -->
+
+    <owl:Thing rdf:about="#OWLIndividual_Board48">
+        <rdf:type rdf:resource="#OWLClass_Board"/>
+        <rdfs:label xml:lang="en">Board 48</rdfs:label>
+        <OWLObjectProperty_consists_of rdf:resource="#OWLIndividual_Elm"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/0/SINUS_SPEC-IOBase.owl#OWLIndividual_IconStConstantineAndStHelen41 -->
+
+    <owl:Thing rdf:about="#OWLIndividual_IconStConstantineAndStHelen41">
+        <rdf:type rdf:resource="#OWLClass_Icon"/>
+        <rdfs:label xml:lang="en"
+            >Icon St. Constantine and St. Helen 41</rdfs:label>
+        <OWLObjectProperty_has_base rdf:resource="#OWLIndividual_Base41"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/0/SINUS_SPEC-IOBase.owl#OWLIndividual_Base41 -->
+
+    <owl:Thing rdf:about="#OWLIndividual_Base41">
+        <rdf:type rdf:resource="#OWLClass_BaseOfIconographicalObject"/>
+        <rdfs:label xml:lang="en">Base 41</rdfs:label>
+        <OWLObjectProperty_is_composed_of rdf:resource="#OWLIndividual_Board41"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/0/SINUS_SPEC-IOBase.owl#OWLIndividual_Board41 -->
+
+    <OWLClass_Board rdf:about="#OWLIndividual_Board41">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en">Board 41</rdfs:label>
+        <OWLObjectProperty_consists_of rdf:resource="#OWLIndividual_Fir"/>
+    </OWLClass_Board>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/0/SINUS_SPEC-IOBase.owl#OWLIndividual_IconStMethodiusAndStCyril19 -->
+
+    <OWLClass_Icon rdf:about="#OWLIndividual_IconStMethodiusAndStCyril19">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en"
+            >Icon St. Methodius and St. Cyril 19</rdfs:label>
+    </OWLClass_Icon>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/0/SINUS_SPEC-IOBase.owl#OWLIndividual_Board19 -->
+
+    <OWLClass_Board rdf:about="#OWLIndividual_Board19">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en">Board 19</rdfs:label>
+        <OWLObjectProperty_forms_part_of rdf:resource="#OWLIndividual_Base19"/>
+    </OWLClass_Board>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/0/SINUS_SPEC-IOBase.owl#OWLIndividual_Base19 -->
+
+    <OWLClass_BaseOfIconographicalObject rdf:about="#OWLIndividual_Base19">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en">Base 19</rdfs:label>
+        <OWLObjectProperty_is_base_of rdf:resource="#OWLIndividual_IconStMethodiusAndStCyril19"/>
+    </OWLClass_BaseOfIconographicalObject>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/0/SINUS_SPEC-IOBase.owl#OWLIndividual_ConiferousWood19 -->
+
+    <owl:Thing rdf:about="#OWLIndividual_ConiferousWood19">
+        <rdf:type rdf:resource="#OWLClass_WoodOfConiferousTree"/>
+        <rdfs:label xml:lang="en"
+            >Coniferous Wood 19</rdfs:label>
+        <OWLObjectProperty_is_incorporated_in rdf:resource="#OWLIndividual_Board19"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/0/SINUS_SPEC-IOBase.owl#OWLIndividual_Base62 -->
+
+    <owl:Thing rdf:about="#OWLIndividual_Base62">
+        <rdf:type rdf:resource="#OWLClass_BaseOfIconographicalObject"/>
+        <rdfs:label>Base 62</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/0/SINUS_SPEC-IOBase.owl#OWLIndividual_Base65 -->
+
+    <OWLClass_BaseOfIconographicalObject rdf:about="#OWLIndividual_Base65">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en">Base 65</rdfs:label>
+        <OWLObjectProperty_is_composed_of rdf:resource="#OWLIndividual_Board65"/>
+    </OWLClass_BaseOfIconographicalObject>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/0/SINUS_SPEC-IOBase.owl#OWLIndividual_Board62 -->
+
+    <owl:Thing rdf:about="#OWLIndividual_Board62">
+        <rdf:type rdf:resource="#OWLClass_Board"/>
+        <rdfs:label xml:lang="en">Board 62</rdfs:label>
+        <OWLObjectProperty_consists_of rdf:resource="#OWLIndividual_Elm"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/0/SINUS_SPEC-IOBase.owl#OWLIndividual_Board65 -->
+
+    <OWLClass_Board rdf:about="#OWLIndividual_Board65">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en">Board 65</rdfs:label>
+    </OWLClass_Board>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/0/SINUS_SPEC-IOBase.owl#OWLIndividual_Chestnut -->
+
+    <OWLClass_WoodOfDeciduousTree rdf:about="#OWLIndividual_Chestnut">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label>Chestnut</rdfs:label>
+    </OWLClass_WoodOfDeciduousTree>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/0/SINUS_SPEC-IOBase.owl#OWLIndividual_ConiferousWood65 -->
+
+    <owl:Thing rdf:about="#OWLIndividual_ConiferousWood65">
+        <rdf:type rdf:resource="#OWLClass_WoodOfConiferousTree"/>
+        <rdfs:label xml:lang="en"
+            >Coniferous Wood 65</rdfs:label>
+        <OWLObjectProperty_is_incorporated_in rdf:resource="#OWLIndividual_Base65"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/0/SINUS_SPEC-IOBase.owl#OWLIndividual_Elm -->
+
+    <owl:Thing rdf:about="#OWLIndividual_Elm">
+        <rdf:type rdf:resource="#OWLClass_WoodOfDeciduousTree"/>
+        <rdfs:label>Elm</rdfs:label>
+    </owl:Thing>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/0/SINUS_SPEC-IOBase.owl#OWLIndividual_Fir -->
+
+    <OWLClass_WoodOfConiferousTree rdf:about="#OWLIndividual_Fir">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label>Fir</rdfs:label>
+    </OWLClass_WoodOfConiferousTree>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/0/SINUS_SPEC-IOBase.owl#OWLIndividual_IconStJohnTheBaptistAndStJohnOfRila62 -->
+
+    <OWLClass_Icon rdf:about="#OWLIndividual_IconStJohnTheBaptistAndStJohnOfRila62">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en">Icon St. John The Baptist and St. John of Rila 62</rdfs:label>
+        <OWLObjectProperty_has_base rdf:resource="#OWLIndividual_Base62"/>
+    </OWLClass_Icon>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/0/SINUS_SPEC-IOBase.owl#OWLIndividual_IconTheAcsensionOfHrist65 -->
+
+    <OWLClass_Icon rdf:about="#OWLIndividual_IconTheAcsensionOfHrist65">
+        <rdf:type rdf:resource="&owl;Thing"/>
+        <rdfs:label xml:lang="en"
+            >Icon The Acsension of Hrist 65</rdfs:label>
+        <OWLObjectProperty_has_base rdf:resource="#OWLIndividual_Base65"/>
+        <OWLObjectProperty_is_composed_of rdf:resource="#OWLIndividual_Base65"/>
+    </OWLClass_Icon>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2011/0/SINUS_SPEC-IOBase.owl#OWLIndividual_Walnut -->
+
+    <owl:Thing rdf:about="#OWLIndividual_Walnut">
+        <rdf:type rdf:resource="#OWLClass_WoodOfDeciduousTree"/>
+        <rdfs:label>Walnut</rdfs:label>
+    </owl:Thing>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 2.2.1.1138) http://owlapi.sourceforge.net -->
+

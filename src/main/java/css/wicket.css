@@ -1,0 +1,129 @@
+/* Indicator*/
+span.wicket-ajax-indicator img {
+	vertical-align: middle;	
+}
+
+/* Modal windows */
+body div.wicket-modal div.w_caption {
+	height: 20px;
+	line-height: normal;
+	font-size: 14px;
+	color: #1F4F82;
+}
+
+body div.wicket-modal div.w_content_3 {
+	border-top: 2px solid #5D5D5D;
+	border-bottom:0;
+	border-right:0;
+	border-left:0;
+	padding: 10px 5px;
+}
+
+body div.wicket-modal div.w_caption a.w_close {
+	z-index: 1;
+}
+
+body div.wicket-modal div.w_top_1 {
+	margin-top: 25px;
+}
+
+/* Autocomplete */
+
+div.wicket-aa-container {
+	border-width: 1px;
+	border-color: #cccccc;
+	border-style: solid;
+	position: relative;
+	z-index: 99999;
+}
+
+div.wicket-aa {
+    font-family: "Lucida Grande","Lucida Sans Unicode",Tahoma,Verdana;
+    font-size: 12px;
+    background-color: white;
+    border-width: 1px;
+    border-color: #cccccc;
+    border-style: solid;
+    padding: 2px;
+    margin: 1px 0 0 0;
+    text-align:left;
+	position: relative;
+	z-index: 99999;
+}
+
+div.wicket-aa ul {
+	list-style:none; 
+	padding: 2px; 
+	margin:0;
+	position: relative;
+	z-index: 99999; 
+}
+
+div.wicket-aa ul li.selected { 
+	background-color: #ccc;
+	margin:0;
+	position: relative;
+	z-index: 99999;
+}
+
+
+/* Upload progress bar */
+
+
+        .mfuex { padding:5px;margin:5px;background:#eee; }
+        .mfuex .wicket-mfu-container { padding: 5px; margin-top: 3px; background-color: white; border:1px solid black; font-size: xx-small; }
+        .mfuex .wicket-mfu-caption { font-weight: bold; }
+        .mfuex .wicket-mfu-container input { margin-left: 5px; font-size: xx-small; }
+
+/* tab panel */
+div.tabratingpanel .tab-panel {
+	padding: 0.8em;
+	background-color: white;
+    border: 1px solid #888;
+    clear: both;
+}
+
+div.tabratingpanel .tab-row ul {
+	padding: 8px 8px 5px 8px;
+	margin-left: 0;
+}
+
+td.data_cell .tabratingpanel .tab-row ul {
+	padding-top: 0;
+	margin-top: 0;
+}
+
+div.tabratingpanel .tab-row ul li {
+	float: left;
+	margin: 0 3px;
+	padding: 6px 0 5px 0;
+	display: block;
+	line-height: normal;
+}
+
+div.tabratingpanel .tab-row ul li.selected {
+	margin-bottom: -1px;	
+}
+
+div.tabratingpanel .tab-row ul li.selected a {
+	color: #666;
+	background-color: #fff;
+	font-size: 12px;
+}
+
+div.tabratingpanel .tab-row ul li.selected a:hover {
+	text-decoration: underline;
+}
+
+div.tabratingpanel .tab-row ul li a {
+	background-color: #999;
+	padding: 5px 8px;
+	font-weight: bold;
+	color: #fff;
+	border-top-right-radius: 4px 4px;
+	border-top-left-radius: 4px 4px;
+	border: 1px solid #888;
+	border-bottom: 0;
+	text-decoration: none;
+	font-size: 11px;
+}

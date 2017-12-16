@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org/">
+<body>
+<wicket:panel>
+	<div wicket:id = "page_tabs_panel"></div>
+	
+	<wicket:fragment wicket:id = "page_tabs_fragment">
+		<wicket:container wicket:id = "page_tabs">
+			<wicket:container wicket:id = "link_comp"></wicket:container>
+			
+			<wicket:fragment wicket:id="tab_link_fragment">
+				<a wicket:id="link" class="link_btn_dblue_up"></a>
+			</wicket:fragment>
+		
+			<wicket:fragment wicket:id="tab_label_fragment">
+				<span wicket:id=label class="text_bold_dblue_up"></span>
+			</wicket:fragment>
+		</wicket:container>
+	</wicket:fragment>
+</wicket:panel>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<jxb:bindings version="2.1" 
+			  xmlns:jxb="http://java.sun.com/xml/ns/jaxb"
+			  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<jxb:bindings schemaLocation="http://82.103.112.243/SinusAdvancedSearchMachineService/service?xsd=xsd3">
+		<jxb:bindings node="//xs:complexType[@name='Author']/xs:sequence/xs:element[@name='Biography']">
+			<jxb:class name="Bio"/>
+			<jxb:property name="Bio"/>
+		</jxb:bindings> 
+	</jxb:bindings>
+</jxb:bindings>
+
+<!-- ot sinus/trunk/src/main/java wsimport http://82.103.112.243/SinusAdvancedSearchMachineService/service?wsdl -b ..\resources\bindings.xml -Xnocompile -->

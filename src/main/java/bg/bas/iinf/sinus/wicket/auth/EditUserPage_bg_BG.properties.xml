@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<entry key="profile">Профил</entry>
+    <entry key="change_password">Смяна на парола</entry>
+    <entry key="admin_mail_field">Административен e-mail</entry>
+	<entry key="save_button_value">Запази</entry>
+	<entry key="exit_button_value">Отказ</entry>
+	<entry key="old_password">Парола</entry>
+	<entry key="new_repeat_password">Повтори новата парола</entry>
+	<entry key="new_password">Нова парола</entry>
+	<entry key="wrong_password">Грешна Парола</entry>
+	<entry key="change_success">Паролата беше променена успешно</entry>
+	<entry key="old_password">Стара парола</entry>
+	<entry key="submit">Въведи</entry>
+</properties>

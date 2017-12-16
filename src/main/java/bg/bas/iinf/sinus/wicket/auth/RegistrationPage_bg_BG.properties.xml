@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<entry key="registration">Регистрация</entry>
+	<entry key="register_user">Регистрирай</entry>
+	<entry key="label_username">Потребителско име</entry>
+	<entry key="label_company">Име на фирма</entry>
+	<entry key="label_admin_mail">Административен e-mail</entry>
+	<entry key="create_success">Вашият потребител беше създаден успешно</entry>
+	<entry key="create_success_require_confirmation">Вашият потребител беше създаден успешно. Ще получите e-mail за потвърждение на оставената от вас поща.</entry>
+    <entry key="user_type_personal">Частно лице</entry>
+    <entry key="user_type_trader">Търговец</entry>
+    <entry key="admin_mail_info">Необходим за потвърждаване на регистрацията</entry>
+    <entry key="is_free"> е свободно</entry>
+    <entry key="is_taken"> е заето</entry>
+    <entry key="error_email_exists">Email-a вече съществува</entry>
+    <entry key="error_username_exists">Потребителското име е заето</entry>
+    <entry key="register_with_fb">Регистрация с Facebook</entry>
+    <entry key="label_admin_mail">Административен e-mail</entry>
+</properties>

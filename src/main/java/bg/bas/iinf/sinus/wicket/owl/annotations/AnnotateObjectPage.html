@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org/">
+<body>
+<wicket:extend>
+	<div class="titlepane_static_h">
+		<h1><wicket:message key="object"></wicket:message></h1>
+	</div>
+	<div class="titlepane_c marginBottom">
+		<div class="titlepane_cin">
+			<table>
+				<tr>
+					<td>URI</td>
+					<td><a wicket:id="view_object"></a></td>
+				</tr>
+				<tr wicket:id="properties">
+					<td wicket:id="key"></td>
+					<td wicket:id="value"></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class="titlepane_static_h">
+		<h1><wicket:message key="ontologies"></wicket:message></h1>
+	</div>
+	<div class="titlepane_c marginBottom">
+		<div wicket:id="select_ontolgoies" class="titlepane_cin"></div>
+	</div>
+	<div class="titlepane_static_h">
+		<h1><wicket:message key="annotations"></wicket:message></h1>
+	</div>
+	<div class="titlepane_c">
+		<form wicket:id="annotations_form" class="titlepane_cin">
+			<table class="marginBottom">
+				<tr wicket:id="annotations">
+					<td wicket:id="name"></td>
+					<td>
+						<select wicket:id="individuals"></select>
+					</td>
+				</tr>
+			</table>
+			<input wicket:id="submit" type="submit" wicket:message="value:submit_annotations" class="btn" />
+		</form>
+	</div>
+</wicket:extend>	
+</body>
+</html>

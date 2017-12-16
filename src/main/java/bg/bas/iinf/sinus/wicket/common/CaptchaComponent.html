@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org/">
+<body>
+<wicket:panel>
+	<div>
+		<img wicket:id="captcha_image" alt="Captcha image" style="width: 15em;" />
+		<a wicket:id="refresh" class="inline"><span style="background:url(images/sprites.png) -147px -71px;width:14px;height:14px;display:block;margin-top:2px;" wicket:message="title:captcha.refresh"></span></a>
+	</div>
+	<div><wicket:message key="captcha.info"></wicket:message><b class="red_star">*</b></div>
+	<div>
+		<input wicket:id="captcha_password" type="text" style="width: 15em;" class="left" autocomplete="off" />
+	</div>
+</wicket:panel>
+</body>
+</html>

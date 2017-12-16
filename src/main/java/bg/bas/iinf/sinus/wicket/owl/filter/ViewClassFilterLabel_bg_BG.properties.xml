@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<entry key="select_all_objects">Избери {0}, където:</entry>
+	<entry key="and">и</entry>
+</properties>

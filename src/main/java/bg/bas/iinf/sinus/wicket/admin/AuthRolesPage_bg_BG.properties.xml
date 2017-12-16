@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<entry key="auth_roles">Потребителски права</entry>
+	<entry key="user">Потребител</entry>
+	<entry key="roles">Права</entry>
+	<entry key="admin">Администратор</entry>
+	<entry key="librarian">Библиотекар</entry>
+	<entry key="student">Студент</entry>
+	<entry key="annotator">Анотатор</entry>
+</properties>

@@ -1,0 +1,60 @@
+#notifications_container .info, 
+#notifications_container .success, 
+#notifications_container .warning,
+#notifications_container .error,
+#notifications_container .validation {
+  border: 1px solid;
+  padding:6px 10px;
+  z-index: 99999;
+}
+
+#notifications_container .info_img,
+#notifications_container .success_img,
+#notifications_container .warning_img,
+#notifications_container .error_img {
+	background-image: url(/images/sprites.png);
+	width: 29px;
+	height: 29px;
+}
+
+#notifications_container .info {
+  color: #00529B;
+  background-color: #BDE5F8;
+}
+
+.info_img {
+	background-position: -30px -79px;
+}
+
+#notifications_container .success {
+  color: #4F8A10;
+  background-color: #DFF2BF;
+}
+
+.success_img {
+	background-position: -60px -79px;
+}
+
+#notifications_container .warning {
+  color: #9F6000;
+  background-color: #FEEFB3;
+}
+
+.warning_img {
+	background-position: -90px -79px;
+}
+
+#notifications_container .error {
+  color: #D8000C;
+  background-color: #FFBABA;
+}
+
+.error_img {
+	background-position: 0 -79px;
+}
+
+.notificationPosition {
+	position: fixed; 
+	bottom: 0;
+	right: 0;
+}

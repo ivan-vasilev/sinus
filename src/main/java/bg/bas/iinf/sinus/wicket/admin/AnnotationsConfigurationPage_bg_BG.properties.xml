@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<entry key="title">Характеристики за анотация</entry>
+	<entry key="root_objects">Базови обекти</entry>
+	<entry key="annotation_properties">Характеристики за анотиране</entry>
+	<entry key="select_correct_values">Можете да избирате само класове, които имат екземпляри</entry>
+	<entry key="no_dfv">За да можете да избирате стойности за конфигуриране на обект, то обекта трябва да е конфигуриран за търсене</entry>
+</properties>

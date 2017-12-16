@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<entry key="enter_label">Вход</entry>
+	<entry key="user_enter_label">Вход за потребители</entry>
+	<entry key="user_blocked">Потребителят е блокиран</entry>
+    <entry key="label_username">Име/E-mail</entry>
+    <entry key="password">Парола</entry>
+    <entry key="value_button">Вход</entry>
+    <entry key="not_found_message">Въвели сте грешен потребител или парола</entry>
+    <entry key="not_confirmed_message">За да използвате този потребител трябва да потвърдите регистрацията му</entry>
+    <entry key="chbox.rememberMe">Запомни ме</entry>
+    <entry key="login.register">Регистрация</entry>
+    <entry key="login.forgotten_password">Забравена парола</entry>
+</properties>

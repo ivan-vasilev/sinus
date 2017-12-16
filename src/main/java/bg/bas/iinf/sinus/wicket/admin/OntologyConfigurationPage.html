@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org/">
+<body>
+<wicket:extend>
+<br /><br />
+	<div class="border marginBottom">
+		<div class="bold" wicket:id="ontology_title"></div>
+		<input wicket:id="is_configured" type="checkbox" style="margin-left:0px;" /><label wicket:for="is_configured"><wicket:message key="mark_configured"></wicket:message></label>
+	</div>
+	<div class="maxWidth clear_both">
+		<div class="top marginTopBig" style="display: table-cell;">
+			<div class="titlepane_static_h">
+				<h1><wicket:message key="objects"></wicket:message></h1>
+			</div>
+			<div class="titlepane_c">
+				<div wicket:id="root_objects" class="titlepane_cin"></div>
+			</div>
+		</div>
+		<div class="top marginTopBig" style="display: table-cell;min-width:20px;"></div>
+		<div wicket:id="default_filter_values_container" class="top marginTopBig" style="display: table-cell;">
+			<div class="titlepane_static_h">
+				<h1><wicket:message key="default_filter_values"></wicket:message></h1>
+			</div>
+			<div class="titlepane_c">
+				<div class="titlepane_cin">
+					<table class="list">
+						<tbody>
+							<tr wicket:id="default_filter_values">
+								<td class="nowrap"><a wicket:id="select_class" class="nowrap"></a></td>
+								<td><a wicket:id="remove_link" wicket:message="title:delete"><span class="left sprite_delete"></span></a></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="top marginTopBig" style="display: table-cell;min-width:20px;"></div>
+		<div wicket:id="default_values_container" class="top marginTopBig" style="display: table-cell;">
+			<div class="titlepane_static_h">
+				<h1><wicket:message key="default_display_values"></wicket:message></h1>
+			</div>
+			<div class="titlepane_c">
+				<div wicket:id="default_display_values" class="titlepane_cin"></div>
+			</div>
+		</div>
+	</div>
+</wicket:extend>	
+</body>
+</html>

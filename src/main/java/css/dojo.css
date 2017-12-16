@@ -1,0 +1,211 @@
+.short7.dijitTextBox,
+.short7.dijitComboBox {
+	width : 7em;
+}
+
+.titlePaneMarginBottom {
+	margin-bottom: 1.5em;
+}
+
+.dijitTooltip {
+	z-index: 1000000;
+}
+
+.dijitComboBox {
+	z-index: 1000000;
+}
+
+.dijitSelect {
+	z-index: 1000000;
+	margin: 0;
+}
+
+.dijitTitlePaneTitle * {
+	font-weight: bold;
+	font-size: 110%;
+}
+
+table.loggedCombo.dijitComboButton {
+	border-collapse: collapse;
+	color: #eee;
+	text-decoration: none;	
+}
+
+table.loggedCombo.dijitComboButton {
+	margin: 0;
+	vertical-align: top;
+}
+
+.categoriesCombo.dijitComboButton {
+	margin-top: 0;
+}
+
+table.loggedCombo.dijitComboButton .dijitButtonNode {
+	padding: 6px 2px 6px 4px;	
+}
+
+.loggedCombo.dijitComboButton .dijitButtonNode,
+.categoriesCombo.dijitComboButton .dijitButtonNode,
+.manufacturersDDBtn.dijitDropDownButton .dijitButtonNode {
+	padding: 1px;
+	background-image: none;
+	background-color: transparent;
+	border: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	outline: none;
+}
+
+.categoriesCombo.dijitComboButton .dijitButtonNode,
+.manufacturersDDBtn.dijitDropDownButton .dijitButtonNode {
+	color: white;
+}
+
+.loggedCombo.dijitComboButton .dijitButtonNode {
+	color: #eee;
+}
+
+table.loggedCombo.dijitComboButton .dijitArrowButton {
+	padding: 6px 4px 6px 0;	
+}
+
+.loggedCombo.dijitComboButton .dijitArrowButton,
+.categoriesCombo.dijitComboButton .dijitArrowButton {
+	padding: 1px 1px 1px 0;
+	background-image: none;
+	background-color: transparent;
+	border: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+.bup .categoriesCombo.dijitComboButton .dijitArrowButton {
+	padding: 2px 1px 1px 0;
+}
+
+.loggedCombo .dijitButtonText {
+	padding: 0 0 0 0.3em;
+	font-family: Arial;
+}
+
+.loggedCombo .dijitButtonContents {
+	outline: none;
+}
+
+.categoriesCombo .dijitButtonText {
+	padding: 13px 5px 12px;
+	font-size: 16px;
+	font-family: Arial;
+}
+
+.bup .manufacturersDDBtn .categoriesCombo .dijitButtonText {
+	padding: 4px 5px;
+	font-size: 14px;
+	font-family: Arial;
+}
+
+.loggedCombo.dijitComboButton .dijitArrowButtonInner {
+	background: url(/images/sprites.png) -150px 0;
+}
+
+.loggedCombo.dijitComboButton.dijitComboButtonHover .dijitButtonNode {
+	color: #eee;
+}
+
+.loggedCombo.dijitComboButton.dijitComboButtonHover {
+	background-color: #446C91;
+}
+
+.categoriesCombo.dijitComboButton .dijitButtonNode,
+.manufacturersDDBtn.dijitDropDownButton .dijitButtonNode {
+	color: #fff;
+	font-weight: bold;
+}
+
+.categoriesCombo.dijitComboButton .dijitArrowButtonInner,
+.manufacturersDDBtn.dijitDropDownButton .dijitArrowButtonInner {
+	background: url(/images/sprites.png) -150px 0;
+}
+
+.categoriesCombo.dijitComboButton.dijitComboButtonHover .dijitArrowButtonInner,
+.manufacturersDDBtn.dijitDropDownButton.dijitDropDownButtonHover .dijitArrowButtonInner {
+	background-position: -90px 0;
+}
+
+.claro .dijitMenuTable {
+	background-color: #f2f2f2;
+	border: 1px solid #5d5d5d;
+	font-size: 10px;
+}
+
+.claro .dijitMenuTable .dijitMenuItem {
+	background-image: none;
+	color: #36c;
+}
+
+.claro .dijitMenuTable .dijitMenuItemSelected {
+	background-color: #D3E3F1;
+	color: #36c;
+}
+
+.claro .dijitComboBoxMenuPopup .dijitMenuItemSelected {
+	background-color: #CFE5F8;
+}
+
+#dojoxLightboxDialog {
+	min-width: 150px;
+	text-align: center;
+}
+
+#dojoxLightboxDialog .dojoxLightboxFooter {
+	color: #333;
+	font-size: 10pt;
+	font-weight: bold;
+	min-width: 150px;
+	text-align: left;
+}
+
+#dojoxLightboxDialog .dojoxLightboxGroupText {
+	display: block;
+	margin-top: 3px;
+	color: #666;
+	font-size: 8pt;
+	font-weight: normal;
+}
+
+#dojoxLightboxDialog .LightboxClose,
+#dojoxLightboxDialog .dojoxLightbox .dijitDialogCloseIconHover,
+#dojoxLightboxDialog .dojoxLightbox .dijitDialogCloseIconActive {
+	background-image: url(/images/sprites.png);
+	background-position: -81px -54px;
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 16px;
+	margin-top: 8px;
+}
+
+#dojoxLightboxDialog .LightboxNext {
+	background-image: url(/images/sprites.png);
+	background-position: -49px -46px;
+	background-repeat: no-repeat;
+	margin: 0 8px;	
+}
+
+#dojoxLightboxDialog .LightboxPrev {
+	background-image: url(/images/sprites.png);
+	background-position: -17px -46px;
+	background-repeat: no-repeat;
+}
+
+#dojoxLightboxDialog .LightboxNext, div.LightboxPrev {
+	float: right;
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+}

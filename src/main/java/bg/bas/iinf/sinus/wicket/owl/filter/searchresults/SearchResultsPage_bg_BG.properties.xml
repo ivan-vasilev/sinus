@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<entry key="search_results">Резултати от търсене</entry>
+	<entry key="results">Резултати</entry>
+	<entry key="new_search">Ново търсене</entry>
+	<entry key="choose_results">Моля, изберете поне един резултат</entry>
+	<entry key="current_query">Текуща заявка</entry>
+	<entry key="context_uris">Изпратена към множество обекти</entry>
+	<entry key="context_query">Отговарящи на следните критерии</entry>
+	<entry key="selected_results">Избрани резултати от предишни търсения</entry>
+	<entry key="add_to_selected">Добави към избраните резултати</entry>
+	<entry key="selected_results_count">Избрани резултати от предишни търсения: {0}</entry>
+</properties>

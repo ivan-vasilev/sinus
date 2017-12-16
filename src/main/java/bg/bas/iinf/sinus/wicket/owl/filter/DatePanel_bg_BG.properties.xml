@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<entry key="type">Тип</entry>
+	<entry key="from">От</entry>
+	<entry key="to">До</entry>
+	<entry key="date">Дата</entry>
+	<entry key="exact_value">Точна дата</entry>
+	<entry key="range_values">Интервал</entry>
+	<entry key="text_value">от ${from} до ${to}</entry>
+</properties>
